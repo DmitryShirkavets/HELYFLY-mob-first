@@ -55,4 +55,10 @@
     &__phone-link{
         @include text(14px, 400, 17px, $textColor);
     }
+
+    &__user{
+        @media screen and (min-width: 1280px) {
+            display: none;
+        }
+    }
 }
