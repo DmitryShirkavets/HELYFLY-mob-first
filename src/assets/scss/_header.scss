@@ -1,0 +1,21 @@
+.header {
+    background-color: $primaryColor;
+    
+
+    &__top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 60px;
+    }
+
+    &__wrapper{
+        display: flex;
+        align-items: center;
+        gap: 45px
+    }
+
+    &__phone{
+        @include text(14px, 400, 17px, $linkColor);
+    }
+}
