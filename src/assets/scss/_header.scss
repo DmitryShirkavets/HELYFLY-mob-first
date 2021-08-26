@@ -1,7 +1,6 @@
 .header {
     background-color: $primaryColor;
     
-
     &__top{
         display: flex;
         justify-content: space-between;
@@ -13,9 +12,33 @@
         display: flex;
         align-items: center;
         gap: 45px
+
+        @media screen and (min-width: 576px) {
+            gap: 36px;
+        }
+    }
+
+    &__city-link{
+        @include text(14px, 400, 17px, $linkColor);
+
+        @media screen and (min-width: 576px) {
+            display: none;
+        }
     }
 
     &__phone{
-        @include text(14px, 400, 17px, $linkColor);
+        display: none;
+
+        span{
+            @include text(14px, 400, 17px, $textColorLight);
+        }
+
+        @media screen and (min-width: 576px) {
+            display: block;
+        }
+    }
+
+    &__phone-link{
+        @include text(14px, 400, 17px, $textColor);
     }
 }

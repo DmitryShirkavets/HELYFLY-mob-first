@@ -11,4 +11,8 @@ $linkColor: #5286EC;
 //container
 %container{
     padding: 0 15px;
+
+    @media screen and (min-width: 576px) {
+        padding: 0 35px;
+    }
 }
