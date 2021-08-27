@@ -1,0 +1,33 @@
+.main{
+    background: url('../images/helimain.svg');
+    background-size: cover;
+    background-position: 62% 0;
+    color: $primaryColor;
+
+    @media screen and (min-width: 768px) {
+        background-position: center;
+    }
+
+    &__inner{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 655px;
+
+        @media screen and (min-width: 768px) {
+            height: 840px;
+        }
+    }
+
+    &__title{
+        @include text(32px, 700, 39px, $primaryColor);
+
+        span{
+            color: $accentColor;
+        }
+    }
+
+    &__price-box{
+        background-color: $accentColor;
+    }
+}
