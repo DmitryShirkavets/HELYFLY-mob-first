@@ -22,10 +22,16 @@
     }
 
     &__title{
+        width: 264px;
         @include text(32px, 700, 39px, $primaryColor);
 
         @media screen and (min-width: 768px) {
             @include text(40px, 700, 48px, $primaryColor);
+            width: 596px;
+        }
+
+        @media screen and (min-width: 1280px) {
+            width: 887px;
         }
 
         span{

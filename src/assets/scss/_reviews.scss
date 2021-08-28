@@ -42,5 +42,27 @@
         &-star{
             font-size: 18px;
         }
+
+        & a, & label {
+            float:right;
+            color: #aaa;
+            text-decoration: none;
+            -webkit-transition: color .4s;
+            -moz-transition: color .4s;
+            -o-transition: color .4s;
+            transition: color .4s;
+        }
+
+        & label:hover ~ label,
+        & input:focus ~ label,
+        & label:hover,
+        & a:hover,
+        & a:hover ~ a,
+        & a:focus,
+        & a:focus ~ a{
+            color: orange;
+            cursor: pointer;
+        }
+
     }
 }

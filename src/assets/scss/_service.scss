@@ -1,6 +1,14 @@
 .service{
     padding-top: 39px;
 
+    @media screen and (min-width: 768px) {
+        padding-top: 50px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        padding-top: 71px;
+    }
+
     &__content{
         display: flex;
         flex-direction: column;
@@ -36,16 +44,6 @@
             gap: 19px;
         }
     }
-
-    @media screen and (min-width: 768px) {
-        padding-top: 50px;
-    }
-
-    @media screen and (min-width: 1280px) {
-        padding-top: 71px;
-    }
-
-
 
     &__title{
         @include text(28px, 400, 34px, $textColor);
@@ -148,35 +146,4 @@
             height: 374px;
         }
     }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-.reviews__rating a, .reviews__rating label {
-	float:right;
-	color: #aaa;
-	text-decoration: none;
-	-webkit-transition: color .4s;
-	-moz-transition: color .4s;
-	-o-transition: color .4s;
-	transition: color .4s;
-}
-.reviews__rating label:hover ~ label,
-.reviews__rating input:focus ~ label,
-.reviews__rating label:hover,
-.reviews__rating a:hover,
-.reviews__rating a:hover ~ a,
-.reviews__rating a:focus,
-.reviews__rating a:focus ~ a{
-	color: orange;
-	cursor: pointer;
 }
