@@ -1,7 +1,9 @@
 .main{
-    background: url('../images/helimain.svg');
+    background: url('../images/helimain.png');
     background-size: cover;
     background-position: 62% 0;
+
+    // background: url('../images/helimain.png') no-repeat center top / cover;
     color: $primaryColor;
 
     @media screen and (min-width: 768px) {
@@ -22,12 +24,105 @@
     &__title{
         @include text(32px, 700, 39px, $primaryColor);
 
+        @media screen and (min-width: 768px) {
+            @include text(40px, 700, 48px, $primaryColor);
+        }
+
         span{
             color: $accentColor;
         }
     }
 
     &__price-box{
+        @include text(18px, 400, 27px, $primaryColor);
+
+        @media screen and (min-width: 768px) {
+            @include text(20px, 400, 30px, $primaryColor);
+        }
+        
+        margin-top: 36px;
+
+        @media screen and (min-width: 768px) {
+            margin-top: 20px;
+        }
+
+        @media screen and (min-width: 1280px) {
+            margin-top: 29px;
+        }
+
         background-color: $accentColor;
+        width: 200px;
+        height: 86px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        padding: 9px 18px;
+        position: relative;
+
+        @media screen and (min-width: 768px) {
+            width: 224px;
+            height: 96px;
+        }
+        
+        span{
+            @include text(30px, 800, 45px, $primaryColor);
+
+            @media screen and (min-width: 768px) {
+                @include text(35px, 800, 53px, $primaryColor);
+            }
+        }
+
+        &::before{
+            content: "";
+            display: block;
+            background-image:url('../images/ellipse.svg');
+            background-size: 47px 47px;
+            width: 47px;
+            height: 47px;
+            position: absolute;
+            right: 15px;
+            top: 16px;
+        }
+
+        &::after{
+            content: "";
+            display: block;
+            background-image:url('../images/proc.svg');
+            background-size: 31px 36px;
+            width: 31px;
+            height: 36px;
+            position: absolute;
+            right: 21px;
+            top: 21px;
+        }
+    }
+
+    &__booking{
+        margin-top: 14px;
+
+        @media screen and (min-width: 768px) {
+            margin-top: 12px;
+        }
+
+        @include text(16px, 900, 19px, $primaryColor);
+
+        @media screen and (min-width: 768px) {
+            @include text(18px, 900, 22px, $primaryColor);
+        }
+
+        width: 275px;
+        height: 68px;
+
+        @media screen and (min-width: 768px) {
+            width: 304px;
+            height: 68px;
+        }
+
+        background-color: inherit;
+        border: 3px solid #FFFFFF;
+        filter: drop-shadow(0px 4px 70px rgba(255, 255, 255, 0.7)) drop-shadow(0px 4px 4px rgba(255, 255, 255, 0.25));
+        border-radius: 7px;
+        cursor: pointer;
     }
 }
