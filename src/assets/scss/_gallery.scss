@@ -1,19 +1,16 @@
 .gallery{
-    height: 344px;
     padding-top: 60px;
 
     @media screen and (min-width: 768px) {
-        height: 979px;
+        border-bottom: 0.5px solid $secondaryColor;
     }
 
     @media screen and (min-width: 1280px) {
-        padding-top: 70px;
-        height: 616px;    
+        padding-top: 70px;   
     }
 
     @media screen and (min-width: 1440px) {
         padding-top: 30px;
-        height: 563px;
     }
 
     .container{
@@ -122,14 +119,17 @@
 
         @media screen and (min-width: 768px) { 
             display: block;
+            margin-bottom: 27px;
         }
 
         @media screen and (min-width: 1280px) { 
             margin-top: 42px;
+            margin-bottom: 30px;
         }
 
         @media screen and (min-width: 1440px) { 
             margin-top: 45px;
+            margin-bottom: 27px;
         }
 
         &::after{
