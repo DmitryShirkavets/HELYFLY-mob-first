@@ -1,0 +1,182 @@
+.service{
+    padding-top: 39px;
+
+    &__content{
+        display: flex;
+        flex-direction: column;
+
+        &-video{
+            width: 290px;
+            height: 197px;
+            align-self: center;
+    
+            @media screen and (min-width: 576px) {
+                width: 506px;
+                height: 340px;
+            }
+    
+            @media screen and (min-width: 768px) {
+                width: 668px;
+                height: 437px;
+            }
+    
+            @media screen and (min-width: 1280px) {
+                display: none;
+            }
+        }
+    }
+
+    .container{
+        @media screen and (min-width: 1280px) {
+            display: flex;
+            gap: 17px;
+        }
+
+        @media screen and (min-width: 1920px) {
+            gap: 19px;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        padding-top: 50px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        padding-top: 71px;
+    }
+
+
+
+    &__title{
+        @include text(28px, 400, 34px, $textColor);
+        text-align: center;
+        margin-bottom: 13px;
+
+        @media screen and (min-width: 768px) {
+            margin-bottom: 40px;
+            @include text(40px, 500, 48px, $textColor);
+        }
+
+        @media screen and (min-width: 1280px) {
+            margin-bottom: 18px;
+        }
+    }
+
+    &__text{
+        @include text(14px, 400, 20px, $textColor);
+
+        @media screen and (min-width: 576px) {
+            @include text(18px, 500, 26px, $textColor);
+        }
+
+        margin-top: 30px;
+        margin-bottom: 23px;
+
+        @media screen and (min-width: 768px) {
+            margin-top: 46px;
+        }
+
+        @media screen and (min-width: 1280px) {
+            margin-top: 0;
+        }
+    }
+
+    &__list{
+        &-item{
+            @include text(14px, 500, 20px, $textColor);
+            position: relative;
+            padding-left: 43px;
+            margin-bottom: 25px;
+
+            &:last-child{
+                margin-bottom: 38px;
+
+                @media screen and (min-width: 576px) {
+                    margin-top: 39px;
+                }
+            }
+
+            &::after{
+                content: "";
+                display: block;
+                background-image:url('../images/clock.svg');
+                background-size: 32px 32px;
+                width: 32px;
+                height: 32px;
+                position: absolute;
+                left: 16px;
+                top: 10px;
+                transform: translate(-50%, -50%);
+                -webkit-transform: translate(-50%, -50%);
+                -moz-transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                -o-transform: translate(-50%, -50%);
+            }
+
+            &:nth-child(2)::after{
+                background-image:url('../images/camera.svg');
+                background-size: 35px 28px;
+                width: 35px;
+                height: 28px;
+            }
+
+            &:nth-child(3)::after{
+                background-image:url('../images/location.svg');
+                background-size: 33px 33px;
+                width: 33px;
+                height: 33px;
+            }
+
+            &:last-child::after{
+                background-image:url('../images/messages.svg');
+                background-size: 31px 31px;
+                width: 31px;
+                height: 31px;
+            }
+        }     
+    }
+
+    &__play{
+        display: none;
+
+        @media screen and (min-width: 1280px) {
+            display: block;
+        }
+
+        &-vid{
+            width: 554px;
+            height: 374px;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.reviews__rating a, .reviews__rating label {
+	float:right;
+	color: #aaa;
+	text-decoration: none;
+	-webkit-transition: color .4s;
+	-moz-transition: color .4s;
+	-o-transition: color .4s;
+	transition: color .4s;
+}
+.reviews__rating label:hover ~ label,
+.reviews__rating input:focus ~ label,
+.reviews__rating label:hover,
+.reviews__rating a:hover,
+.reviews__rating a:hover ~ a,
+.reviews__rating a:focus,
+.reviews__rating a:focus ~ a{
+	color: orange;
+	cursor: pointer;
+}
