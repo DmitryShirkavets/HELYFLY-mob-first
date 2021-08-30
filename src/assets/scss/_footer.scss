@@ -1,0 +1,12 @@
+.footer{
+    &__top{
+        & .container{
+            margin-top: 81px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 23px;
+            border-bottom: 0.5px solid $secondaryColor;
+        }
+    }
+}

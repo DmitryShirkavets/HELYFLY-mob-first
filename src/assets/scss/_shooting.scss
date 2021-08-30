@@ -43,6 +43,7 @@
 
     &__day{
         border: 1px solid $secondaryColor;
+        margin-bottom: 45px;
         margin-top: 41px;
 
         @media screen and (min-width: 675px) {
@@ -56,6 +57,7 @@
         @media screen and (min-width: 1280px) {
             width: 770px;
             margin-top: 40px;
+            margin-bottom: 82px;
         }
 
         @media screen and (min-width: 1440px) {

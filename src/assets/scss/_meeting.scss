@@ -1,0 +1,38 @@
+.meeting{
+    &__map{
+        width: 100%;
+        overflow: hidden;
+
+        &-frame{
+            width: 100%;
+            border: none;
+            height: 423px;
+
+            @media screen and (min-width: 576px) {
+                height: 509px;
+            }
+        }
+    }
+
+    &__content{
+        border: 1px solid $secondaryColor;
+        margin-top: 52px;
+    }
+
+    &__slider{
+        &-frame{
+            width: 66px;
+            height: 66px;
+            background-color: $accentColor;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @include text(30px, 700, 44px, $primaryColor);
+        }
+    }
+}
