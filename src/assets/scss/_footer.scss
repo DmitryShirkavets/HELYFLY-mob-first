@@ -1,12 +1,93 @@
 .footer{
     &__top{
-        & .container{
+        &-wrapper{
             margin-top: 81px;
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding-bottom: 23px;
             border-bottom: 0.5px solid $secondaryColor;
+
+            @media screen and (min-width: 576px) {
+                padding-bottom: 44px;
+                border: none;
+            }      
         }
+
+        &-language{
+            display: none;
+
+            @media screen and (min-width: 1280px) {
+                display: block;
+            }
+        }
+    }
+
+    &__logo{
+        &-img{
+            @media screen and (min-width: 576px) {
+                height: 22px;
+            }  
+        }
+    }
+
+    &__language{
+        border: none;
+        background-color: inherit;
+
+        &:focus, &:focus-visible{
+            border: none;
+            background-color: inherit;
+        }
+    }
+
+    &__bottom{
+        @media screen and (min-width: 576px) {
+            background-color: $backColor;
+        }  
+
+        &-wrapper{
+            margin-top: 26px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+
+            @media screen and (min-width: 576px) {
+                flex-wrap: nowrap;
+                margin-top: 0;
+                padding-top: 20px;
+                padding-bottom: 17px;
+            } 
+
+            // @media screen and (min-width: 1280px) {
+            //     display: grid;
+            //     grid-template-columns: 1fr 7fr;
+            //     column-gap: 276px;
+            // }  
+        }
+
+        &-language{
+            @media screen and (min-width: 576px) {
+                order: 1;
+            }  
+
+            @media screen and (min-width: 1280px) {
+                opacity: 0;
+            }  
+        }
+    }
+
+    &__copyright{
+        width: 100%;
+        text-align: center;
+        margin-top: 24px;
+        margin-bottom: 20px;
+        @include text(14px, 400, 17px, $textColorLight);
+
+        @media screen and (min-width: 576px) {
+            width: auto;
+            margin: 0;
+        }  
     }
 }
