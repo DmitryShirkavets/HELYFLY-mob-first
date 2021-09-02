@@ -1,10 +1,10 @@
 
-// $(document).ready(function(){
-//     $('.meeting__slider').slick({
-//         dots: true,
-//         infinite: true,
-//         speed: 300,
-//         slidesToShow: 1,
-//         adaptiveHeight: true
-//   });
 
+// GALLERY
+
+let heightGallery = document.querySelector('.gallery__list');
+const buttonGallery = document.querySelector('.gallery__button');
+console.log(buttonGallery);
+buttonGallery.onclick = function() {
+    heightGallery.style.height = 'auto';
+}

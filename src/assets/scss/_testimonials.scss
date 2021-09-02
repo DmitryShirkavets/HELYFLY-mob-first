@@ -1,5 +1,6 @@
 .testimonials{
     &__title{
+        display: flex;
         @include text(26px, 400, 39px, $textColor);
         text-align: center;
         
