@@ -4,7 +4,11 @@
 
 let heightGallery = document.querySelector('.gallery__list');
 const buttonGallery = document.querySelector('.gallery__button');
-console.log(buttonGallery);
+
 buttonGallery.onclick = function() {
-    heightGallery.style.height = 'auto';
+    if(heightGallery.style.height == 'auto'){
+        heightGallery.style.height = '385px';
+    }else{
+        heightGallery.style.height = 'auto';
+    }
 }
