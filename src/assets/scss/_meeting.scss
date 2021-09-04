@@ -8,7 +8,7 @@
             border: none;
             height: 423px;
 
-            @media screen and (min-width: 576px) {
+            @include media(xs) {
                 height: 509px;
             }
         }

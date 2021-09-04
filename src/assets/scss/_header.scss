@@ -1,7 +1,7 @@
 .header {
     background-color: $primaryColor;
 
-    @media screen and (min-width: 768px){
+    @include media(sm){
         box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
     }
     
@@ -11,7 +11,7 @@
         align-items: center;
         height: 60px;
 
-        @media screen and (min-width: 768px) {
+        @include media(sm) {
             height: 100px;
         }
     }
@@ -21,13 +21,13 @@
         align-items: center;
         gap: 45px;
 
-        @media screen and (min-width: 576px) {
+        @include media(xs) {
             gap: 36px;
         }
     }
 
     &__logo-img{
-        @media screen and (min-width: 768px) {
+        @include media(sm) {
             height: 23px;
         }
     }
@@ -35,7 +35,7 @@
     &__city-link{
         @include text(14px, 400, 17px, $linkColor);
 
-        @media screen and (min-width: 576px) {
+        @include media(xs) {
             display: none;
         }
     }
@@ -47,7 +47,7 @@
             @include text(14px, 400, 17px, $textColorLight);
         }
 
-        @media screen and (min-width: 576px) {
+        @include media(xs) {
             display: block;
         }
     }
@@ -57,7 +57,7 @@
     }
 
     &__user{
-        @media screen and (min-width: 1280px) {
+        @include media(md) {
             display: none;
         }
     }

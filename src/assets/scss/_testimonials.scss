@@ -4,23 +4,23 @@
         @include text(26px, 400, 39px, $textColor);
         text-align: center;
         
-        @media screen and (min-width: 768px) {
+        @include media(sm) {
             @include text(20px, 500, 29px, $textColor);
             text-align: unset;
         }
 
-        @media screen and (min-width: 1280px) {
+        @include media(md) {
             @include text(28px, 500, 41px, $textColor);
         }
 
-        @media screen and (min-width: 1440px) {
+        @include media(lg) {
             @include text(20px, 500, 29px, $textColor);
         }
 
         span{
             display: none;
 
-            @media screen and (min-width: 768px) {
+            @include media(sm) {
                 display: block;
             }
         }
@@ -32,7 +32,7 @@
         flex-direction: column;
         align-items: center;
 
-        @media screen and (min-width: 768px) {
+        @include media(sm) {
             max-width: 655px;
             align-items: unset;
         }
@@ -45,11 +45,11 @@
         @include text(17px, 500, 25px, $linkColor);
         cursor: pointer;
 
-        @media screen and (min-width: 768px) {
+        @include media(sm) {
             margin-top: 45px;   
         }
 
-        @media screen and (min-width: 1280px) {
+        @include media(md) {
             margin-top: 47px;   
         }
     }
@@ -72,7 +72,7 @@
     &__avatar{
         height: 84px;
 
-        @media screen and (min-width: 768px) {
+        @include media(sm) {
             height: 101px;
         }
     }
@@ -84,7 +84,7 @@
             @include text(16px, 500, 19px, $textColor);
             margin-bottom: 6px;
 
-            @media screen and (min-width: 768px) {
+            @include media(sm) {
                 margin-bottom: 10px;
             }
         }
@@ -93,7 +93,7 @@
             @include text(14px, 400, 21px, $textColor);
             margin-bottom: 7px;
 
-            @media screen and (min-width: 768px) {
+            @include media(sm) {
                 margin-bottom: 10px;
             }
         }
@@ -104,7 +104,7 @@
             margin-top: 24px;
             margin-left: 20px;
 
-            @media screen and (min-width: 768px) {
+            @include media(sm) {
                 margin-top: 0;
                 align-self: flex-end;
                 margin-bottom: 10px;
@@ -131,7 +131,7 @@
     &__text{
         @include text(14px, 400, 21px, $textColor);
 
-        @media screen and (min-width: 768px) {
+        @include media(sm) {
             @include text(16px, 400, 21px, $textColor);
             max-width: 510px;
         }

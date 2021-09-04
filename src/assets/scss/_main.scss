@@ -2,11 +2,9 @@
     background: url('../images/helimain.png');
     background-size: cover;
     background-position: 62% 0;
-
-    // background: url('../images/helimain.png') no-repeat center top / cover;
     color: $primaryColor;
 
-    @media screen and (min-width: 768px) {
+    @include media(sm) {
         background-position: center;
     }
 
@@ -16,7 +14,7 @@
         justify-content: center;
         height: 655px;
 
-        @media screen and (min-width: 768px) {
+        @include media(sm) {
             height: 840px;
         }
     }
@@ -25,12 +23,12 @@
         width: 264px;
         @include text(32px, 700, 39px, $primaryColor);
 
-        @media screen and (min-width: 768px) {
+        @include media(sm) {
             @include text(40px, 700, 48px, $primaryColor);
             width: 596px;
         }
 
-        @media screen and (min-width: 1280px) {
+        @include media(md) {
             width: 887px;
         }
 
@@ -42,17 +40,17 @@
     &__price-box{
         @include text(18px, 400, 27px, $primaryColor);
 
-        @media screen and (min-width: 768px) {
+        @include media(sm) {
             @include text(20px, 400, 30px, $primaryColor);
         }
         
         margin-top: 36px;
 
-        @media screen and (min-width: 768px) {
+        @include media(sm) {
             margin-top: 20px;
         }
 
-        @media screen and (min-width: 1280px) {
+        @include media(md) {
             margin-top: 29px;
         }
 
@@ -66,7 +64,7 @@
         padding: 9px 18px;
         position: relative;
 
-        @media screen and (min-width: 768px) {
+        @include media(sm) {
             width: 224px;
             height: 96px;
         }
@@ -74,7 +72,7 @@
         span{
             @include text(30px, 800, 45px, $primaryColor);
 
-            @media screen and (min-width: 768px) {
+            @include media(sm) {
                 @include text(35px, 800, 53px, $primaryColor);
             }
         }
@@ -107,20 +105,20 @@
     &__booking{
         margin-top: 14px;
 
-        @media screen and (min-width: 768px) {
+        @include media(sm) {
             margin-top: 12px;
         }
 
         @include text(16px, 900, 19px, $primaryColor);
 
-        @media screen and (min-width: 768px) {
+        @include media(sm) {
             @include text(18px, 900, 22px, $primaryColor);
         }
 
         width: 275px;
         height: 68px;
 
-        @media screen and (min-width: 768px) {
+        @include media(sm) {
             width: 304px;
             height: 68px;
         }

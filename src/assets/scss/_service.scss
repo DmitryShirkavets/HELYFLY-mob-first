@@ -1,11 +1,11 @@
 .service{
     padding-top: 39px;
 
-    @media screen and (min-width: 768px) {
+    @include media(sm) {
         padding-top: 50px;
     }
 
-    @media screen and (min-width: 1280px) {
+    @include media(md) {
         padding-top: 71px;
     }
 
@@ -18,24 +18,24 @@
             height: 197px;
             align-self: center;
     
-            @media screen and (min-width: 576px) {
+            @include media(xs) {
                 width: 506px;
                 height: 340px;
             }
     
-            @media screen and (min-width: 768px) {
+            @include media(sm) {
                 width: 668px;
                 height: 437px;
             }
     
-            @media screen and (min-width: 1280px) {
+            @include media(md) {
                 display: none;
             }
         }
     }
 
     .container{
-        @media screen and (min-width: 1280px) {
+        @include media(md) {
             display: flex;
             gap: 17px;
         }
@@ -50,12 +50,12 @@
         text-align: center;
         margin-bottom: 13px;
 
-        @media screen and (min-width: 768px) {
+        @include media(sm) {
             margin-bottom: 40px;
             @include text(40px, 500, 48px, $textColor);
         }
 
-        @media screen and (min-width: 1280px) {
+        @include media(md) {
             margin-bottom: 18px;
         }
     }
@@ -63,18 +63,18 @@
     &__text{
         @include text(14px, 400, 20px, $textColor);
 
-        @media screen and (min-width: 576px) {
+        @include media(xs) {
             @include text(18px, 500, 26px, $textColor);
         }
 
         margin-top: 30px;
         margin-bottom: 23px;
 
-        @media screen and (min-width: 768px) {
+        @include media(sm) {
             margin-top: 46px;
         }
 
-        @media screen and (min-width: 1280px) {
+        @include media(md) {
             margin-top: 0;
         }
     }
@@ -89,7 +89,7 @@
             &:last-child{
                 margin-bottom: 38px;
 
-                @media screen and (min-width: 576px) {
+                @include media(xs) {
                     margin-top: 39px;
                 }
             }
@@ -137,7 +137,7 @@
     &__play{
         display: none;
 
-        @media screen and (min-width: 1280px) {
+        @include media(md) {
             display: block;
         }
 

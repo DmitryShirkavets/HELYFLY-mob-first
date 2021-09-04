@@ -1,15 +1,15 @@
 .gallery{
     padding-top: 60px;
 
-    @media screen and (min-width: 768px) {
+    @include media(sm) {
         border-bottom: 0.5px solid $secondaryColor;
     }
 
-    @media screen and (min-width: 1280px) {
+    @include media(md) {
         padding-top: 70px;   
     }
 
-    @media screen and (min-width: 1440px) {
+    @include media(lg) {
         padding-top: 30px;
     }
 
@@ -18,11 +18,11 @@
         flex-direction: column;
         padding: 0;
 
-        @media screen and (min-width: 768px) {
+        @include media(sm) {
             padding: 0 50px;
         }
 
-        @media screen and (min-width: 1280px) {
+        @include media(md) {
             padding: 0;
             width: 1140px;
             margin: 0 auto;
@@ -37,24 +37,24 @@
         text-align: center;
         margin-bottom: 32px;
 
-        @media screen and (min-width: 768px) {
+        @include media(sm) {
             @include text(20px, 500, 29px, $textColor);
             justify-content: start;
             margin-bottom: 30px;
         }
 
-        @media screen and (min-width: 1280px) {
+        @include media(md) {
             @include text(28px, 500, 41px, $textColor);
             margin-bottom: 50px;
         }
 
-        @media screen and (min-width: 1440px) {
+        @include media(lg) {
             @include text(20px, 500, 29px, $textColor);
             margin-bottom: 37px;
         }
 
         br{
-            @media screen and (min-width: 768px) {
+            @include media(sm) {
                 display: none;
             }
         }
@@ -62,7 +62,7 @@
         span{
             display: none;
 
-            @media screen and (min-width: 768px) {
+            @include media(sm) {
                 display: block;
             }
         }
@@ -77,7 +77,7 @@
         overflow-y: hidden;
         padding-left: 15px;
 
-        @media screen and (min-width: 1280px){
+        @include media(md){
             padding-left: 0;
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -85,7 +85,7 @@
             overflow-x: hidden;
         }
 
-        @media screen and (min-width: 1280px) {
+        @include media(md) {
             grid-template-columns: repeat(4, 1fr);
             column-gap: 12px;
         }
@@ -94,7 +94,7 @@
             display: flex;
             justify-content: center;
 
-            @media screen and (min-width: 768px) { 
+            @include media(sm) { 
                 &:nth-child(1n){
                     justify-content: flex-end;
                 }
@@ -123,17 +123,17 @@
         @include text(17px, 500, 25px, $linkColor);
         display: none;
 
-        @media screen and (min-width: 768px) { 
+        @include media(sm) { 
             display: block;
             margin-bottom: 27px;
         }
 
-        @media screen and (min-width: 1280px) { 
+        @include media(md) { 
             margin-top: 42px;
             margin-bottom: 30px;
         }
 
-        @media screen and (min-width: 1440px) { 
+        @include media(lg) { 
             margin-top: 45px;
             margin-bottom: 27px;
         }
@@ -149,10 +149,11 @@
             right: -3%;
             top: 50%;
             transform: translate(-50%, -50%);
-            -webkit-transform: translate(-50%, -50%);
-            -moz-transform: translate(-50%, -50%);
-            -ms-transform: translate(-50%, -50%);
-            -o-transform: translate(-50%, -50%);
+            transform: rotate(0deg);
+            -webkit-transform: rotate(0deg);
+            -moz-transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+            -o-transform: rotate(0deg);
         }
 
         &::before{
@@ -166,10 +167,11 @@
             left: 3%;
             top: 50%;
             transform: translate(-50%, -50%);
-            -webkit-transform: translate(-50%, -50%);
-            -moz-transform: translate(-50%, -50%);
-            -ms-transform: translate(-50%, -50%);
-            -o-transform: translate(-50%, -50%);
-        }
+            transform: rotate(0deg);
+            -webkit-transform: rotate(0deg);
+            -moz-transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+            -o-transform: rotate(0deg);
+}
     }
 }

@@ -8,7 +8,7 @@
             padding-bottom: 23px;
             border-bottom: 0.5px solid $secondaryColor;
 
-            @media screen and (min-width: 576px) {
+            @include media(xs) {
                 padding-bottom: 44px;
                 border: none;
             }      
@@ -17,7 +17,7 @@
         &-language{
             display: none;
 
-            @media screen and (min-width: 1280px) {
+            @include media(md) {
                 display: block;
             }
         }
@@ -25,7 +25,7 @@
 
     &__logo{
         &-img{
-            @media screen and (min-width: 576px) {
+            @include media(xs) {
                 height: 22px;
             }  
         }
@@ -42,7 +42,7 @@
     }
 
     &__bottom{
-        @media screen and (min-width: 576px) {
+        @include media(xs) {
             background-color: $backColor;
         }  
 
@@ -53,7 +53,7 @@
             align-items: center;
             justify-content: space-between;
 
-            @media screen and (min-width: 576px) {
+            @include media(xs) {
                 flex-wrap: nowrap;
                 margin-top: 0;
                 padding-top: 20px;
@@ -62,11 +62,11 @@
         }
 
         &-language{
-            @media screen and (min-width: 576px) {
+            @include media(xs) {
                 order: 1;
             }  
 
-            @media screen and (min-width: 1280px) {
+            @include media(md) {
                 opacity: 0;
             }  
         }
@@ -79,7 +79,7 @@
         margin-bottom: 20px;
         @include text(14px, 400, 17px, $textColorLight);
 
-        @media screen and (min-width: 576px) {
+        @include media(xs) {
             width: auto;
             margin: 0;
         }  

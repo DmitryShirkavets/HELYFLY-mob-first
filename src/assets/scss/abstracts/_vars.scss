@@ -1,5 +1,5 @@
 
-//colors
+// colors
 
 $accentColor: #FC9B09;
 $primaryColor: #fff;
@@ -9,7 +9,16 @@ $textColorLight: #B3B3B3;
 $linkColor: #5286EC;
 $backColor: #FAF9F8;
 
-//container
+// breakpoints
+
+$breakpoints: (
+    xs: 576px,
+    sm: 768px,
+    md: 1280px,
+    lg: 1440px
+);
+
+// container
 %container{
     padding: 0 15px;
 

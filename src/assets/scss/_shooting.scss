@@ -1,11 +1,11 @@
 .shooting{
     padding-top: 40px;
 
-    @media screen and (min-width: 576px) {
+    @include media(xs) {
         padding-top: 21px;
     }
 
-    @media screen and (min-width: 768px) {
+    @include media(sm) {
         padding-top: 50px;
     }
 
@@ -13,29 +13,29 @@
         text-align: center;
         @include text(26px, 400, 31px, $textColor);
 
-        @media screen and (min-width: 576px) {
+        @include media(xs) {
             @include text(26px, 400, 38px, $textColor);
             display: flex;
             align-items: flex-end;
         }
 
-        @media screen and (min-width: 768px) {
+        @include media(sm) {
             @include text(20px, 500, 29px, $textColor);
             text-align: left;
         }
 
-        @media screen and (min-width: 1280px) {
+        @include media(md) {
             @include text(28px, 500, 41px, $textColor);
         }
 
-        @media screen and (min-width: 1440px) {
+        @include media(lg) {
             @include text(20px, 500, 29px, $textColor);
         }
 
         & span{
             display: none;
 
-            @media screen and (min-width: 576px) {
+            @include media(xs) {
                 display: block;
             }
         }
@@ -46,35 +46,35 @@
         margin-bottom: 45px;
         margin-top: 41px;
 
-        @media screen and (min-width: 675px) {
+        @include media(xs) {
             margin-top: 40px;
         }
 
-        @media screen and (min-width: 768px) {
+        @include media(sm) {
             margin-top: 30px;
         }
         
-        @media screen and (min-width: 1280px) {
+        @include media(md) {
             width: 770px;
             margin-top: 40px;
             margin-bottom: 82px;
         }
 
-        @media screen and (min-width: 1440px) {
+        @include media(lg) {
             margin-top: 30px;
         }
 
         &-firstHalf, &-secondHalf{
             padding: 30px 10px 30px 20px;
 
-            @media screen and (min-width: 576px) {
+            @include media(xs) {
                 padding: 20px 30px;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
             }
 
-            @media screen and (min-width: 768px) {
+            @include media(sm) {
                 padding: 20px 30px;
             }
         }
@@ -88,11 +88,11 @@
             @include text(18px, 400, 26px, $textColor);
             padding: 20px 44px 16px;
 
-            @media screen and (min-width: 576px) {
+            @include media(xs) {
                 padding: 30px 20px 20px;
             }
 
-            @media screen and (min-width: 768px) {
+            @include media(sm) {
                 padding: 30px 30px 20px;
             }
 
@@ -128,7 +128,7 @@
             -o-transition: 0.5s ease-in-out;
             margin-top: 20px;
 
-            @media screen and (min-width: 576px){
+            @include media(xs) {
                 margin-top: 0;
             }
 
@@ -144,7 +144,7 @@
     &__reviews{
         padding: 32px 5px 29px 65px;
 
-        @media screen and (min-width: 576px) {
+        @include media(xs) {
             border-top: none;
         }
 
@@ -152,7 +152,7 @@
             left: 20px;
             top: 30px;
 
-            @media screen and (min-width: 576px) {
+            @include media(xs) {
                 left: 30px;
                 top: 20px;
             }
