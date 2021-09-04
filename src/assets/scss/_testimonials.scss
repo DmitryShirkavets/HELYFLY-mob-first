@@ -140,8 +140,15 @@
         margin-bottom: 17px;
     }
 
-    &-star{
-        font-size: 18px;
+    &__rating{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        gap: 7px;
+    }
+
+    &__star{
+        font-size: 20px;
     }
 
     & a, & label {

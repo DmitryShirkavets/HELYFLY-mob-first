@@ -160,12 +160,15 @@
     }
 
     &__rating{
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 7px;
+        
         &-star{
-            font-size: 18px;
+            font-size: 20px;
         }
 
         & a, & label {
-            float:right;
             color: #aaa;
             text-decoration: none;
             -webkit-transition: color .4s;

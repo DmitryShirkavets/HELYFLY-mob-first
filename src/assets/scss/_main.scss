@@ -54,15 +54,18 @@
             margin-top: 29px;
         }
 
-        background-color: $accentColor;
-        width: 200px;
-        height: 86px;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
-        border-radius: 5px;
+        background: url('./../images/Rectangle\ 6.2.svg'); 
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 208px;
+        height: 93px;
+        // box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+        // border-radius: 5px;
         display: flex;
         flex-direction: column;
         padding: 9px 18px;
         position: relative;
+        margin-left: -5px;
 
         @include media(sm) {
             width: 224px;
