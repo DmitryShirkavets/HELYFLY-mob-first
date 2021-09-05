@@ -27,8 +27,12 @@
     }
 
     &__logo-img{
+        width: 84px;
+        height: 15px;
+        
         @include media(sm) {
             height: 23px;
+            width: 128px;
         }
     }
 
@@ -48,7 +52,7 @@
         }
 
         @include media(xs) {
-            display: block;
+            display: flex;
         }
     }
 

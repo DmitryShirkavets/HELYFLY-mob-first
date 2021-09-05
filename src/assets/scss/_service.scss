@@ -37,11 +37,11 @@
     .container{
         @include media(md) {
             display: flex;
-            gap: 17px;
+            gap: 37px;
         }
 
         @media screen and (min-width: 1920px) {
-            gap: 19px;
+            gap: 39px;
         }
     }
 
@@ -57,6 +57,7 @@
 
         @include media(md) {
             margin-bottom: 18px;
+            text-align: start;
         }
     }
 
@@ -72,16 +73,24 @@
 
         @include media(sm) {
             margin-top: 46px;
+            width: 549px;
         }
 
         @include media(md) {
             margin-top: 0;
+        }
+
+        br{
+            display: none;
         }
     }
 
     &__list{
         &-item{
             @include text(14px, 500, 20px, $textColor);
+            display: flex;
+            align-items: center;
+            height: 32px;
             position: relative;
             padding-left: 43px;
             margin-bottom: 25px;
@@ -103,7 +112,7 @@
                 height: 32px;
                 position: absolute;
                 left: 16px;
-                top: 10px;
+                top: 16px;
                 transform: translate(-50%, -50%);
                 -webkit-transform: translate(-50%, -50%);
                 -moz-transform: translate(-50%, -50%);
