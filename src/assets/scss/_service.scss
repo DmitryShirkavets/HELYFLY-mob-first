@@ -49,6 +49,7 @@
         @include text(28px, 400, 34px, $textColor);
         text-align: center;
         margin-bottom: 13px;
+        max-width: 282px;
 
         @include media(sm) {
             margin-bottom: 40px;
@@ -63,9 +64,11 @@
 
     &__text{
         @include text(14px, 400, 20px, $textColor);
+        max-width: 290px;
 
         @include media(xs) {
             @include text(18px, 500, 26px, $textColor);
+            max-width: 509px;
         }
 
         margin-top: 30px;
@@ -78,10 +81,6 @@
 
         @include media(md) {
             margin-top: 0;
-        }
-
-        br{
-            display: none;
         }
     }
 

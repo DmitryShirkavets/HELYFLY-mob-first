@@ -4,7 +4,7 @@ ul{
     list-style: none;
 }
 
-p, h1, h2, h3, h4, h5, h6, ul, span{
+*, *::before, *::after{
     margin: 0;
     padding: 0;
 }
@@ -58,3 +58,6 @@ body{
 @import 'social';
 // FOOTER__REQUISITES
 @import 'requisites';
+
+@import 'slick';
+@import 'slick-theme';

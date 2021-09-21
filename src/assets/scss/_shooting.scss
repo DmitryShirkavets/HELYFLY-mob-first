@@ -11,25 +11,30 @@
 
     &__title{
         text-align: center;
+        max-width: 278px;
         @include text(26px, 400, 31px, $textColor);
 
         @include media(xs) {
             @include text(26px, 400, 38px, $textColor);
+            max-width: 283px;
             display: flex;
             align-items: flex-end;
         }
 
         @include media(sm) {
             @include text(20px, 500, 29px, $textColor);
+            max-width: 288px;
             text-align: left;
         }
 
         @include media(md) {
             @include text(28px, 500, 41px, $textColor);
+            max-width: 337px;
         }
 
         @include media(lg) {
             @include text(20px, 500, 29px, $textColor);
+            max-width: 288px;
         }
 
         & span{

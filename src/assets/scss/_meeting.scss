@@ -1,4 +1,6 @@
 .meeting{
+    padding-bottom: 40px;
+    
     &__map{
         width: 100%;
         overflow: hidden;
@@ -17,9 +19,43 @@
     &__content{
         border: 1px solid $secondaryColor;
         margin-top: 52px;
+        padding-top: 52px;
+        padding-bottom: 20px;
     }
 
     &__slider{
+        margin-bottom: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &-info{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .slick-arrow.slick-prev{
+            background: url(./../images/arrow-slider2.svg);
+            height: 19px;
+            width: 10px;
+            left: 26px;
+        }
+
+        .slick-arrow.slick-next{
+            background: url(./../images/arrow-slider.svg);
+            height: 19px;
+            width: 10px;
+            right: 26px;
+        }
+
+        .slick-slide {
+            display: flex !important;
+            align-items: center;
+            justify-content: center;
+        }
+
         &-frame{
             width: 66px;
             height: 66px;
@@ -33,6 +69,48 @@
             align-items: center;
             justify-content: center;
             @include text(30px, 700, 44px, $primaryColor);
+            margin-bottom: 20px;
+        }
+
+        &-title{
+            margin-bottom: 10px;
+        }
+    }
+
+
+    &__author{
+        display: grid;
+        grid-template-areas: 
+            "av name"
+            "av position"
+            "av button";
+        column-gap: 11px;
+
+        &-img{
+            max-width: 67px;
+            grid-area: av;
+            justify-self: end;
+        }
+
+        &-name{
+            @include text(16px, 500, 19px, $textColor);
+            grid-area: name;
+            margin-bottom: 5px;
+        }
+
+        &-position{
+            @include text(14px, 400, 21px, $textColor);
+            grid-area: position;
+            margin-bottom: 7px;
+        }
+
+        &-button{
+            @include text(14px, 500, 21px, $linkColor);
+            background-color: inherit;
+            border: none;
+            max-width: 156px;
+            text-align: left;
+            grid-area: button;
         }
     }
 }

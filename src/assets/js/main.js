@@ -9,5 +9,8 @@ buttonGallery.onclick = function() {
     }else{
         listGallery.classList.add('active');
     }
-    
 }
+
+// MEETING SLIDER
+
+$('.meeting__slider').slick();

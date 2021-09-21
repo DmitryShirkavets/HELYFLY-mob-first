@@ -26,26 +26,20 @@
     }
 
     &__title{
-        width: 264px;
+        max-width: 264px;
         @include text(32px, 700, 39px, $primaryColor);
 
         @include media(sm) {
             @include text(40px, 700, 48px, $primaryColor);
-            width: 596px;
+            max-width: 596px;
         }
 
         @include media(md) {
-            width: 887px;
+            max-width: 887px;
         }
 
         span{
             color: $accentColor;
-        }
-
-        br{
-            @include media(sm) {
-                display: none;
-            }
         }
     }
 

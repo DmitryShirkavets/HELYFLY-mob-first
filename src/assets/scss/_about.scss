@@ -89,6 +89,7 @@
         &-link{
             text-align: center;
             @include text(14px, 500, 21px, $linkColor);
+            max-width: 225px;
 
             &:hover{
                 text-decoration: underline;
@@ -161,7 +162,7 @@
         }
 
         &-text{
-            @include text(16px, 500, 24px, $textColor);
+            @include text(16px, 400, 24px, $textColor);
             margin-top: 14px;
             margin-bottom: 22px;
 
